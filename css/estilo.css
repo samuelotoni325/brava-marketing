@@ -69,7 +69,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,su
 .lider-b{width:78%;left:-7%;z-index:2}
 .chip{position:absolute;z-index:3;display:flex;align-items:baseline;gap:8px;padding:12px 16px;background:var(--creme);color:var(--azul);font-size:15px;font-weight:600;white-space:nowrap}
 .chip b{font-family:var(--titulo);font-stretch:125%;font-weight:800;font-size:22px}
-.chip-a{left:-12%;top:68%}
+.chip-a{left:3%;top:70%}
 .chip-b{right:-2%;bottom:13%;background:var(--laranja)}
 
 /* fatos */
