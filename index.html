@@ -1,343 +1,392 @@
 <!doctype html>
 <html lang="pt-BR">
+<head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>BRAVA Marketing</title>
-<meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Você abriu seu negócio nos EUA. A BRAVA faz o cliente certo encontrar você. Desde 2023, mais de 100 empresas atendidas em todo o país.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BRAVA Marketing · pedidos de orçamento para prestadores de serviço nos EUA</title>
+<meta name="description" content="Marketing para brasileiros com empresas de construção, reforma, house cleaning e serviços locais nos EUA. Toda semana, um relatório com cada pedido de orçamento, de onde veio e quanto custou.">
+<meta name="theme-color" content="#0C0C0C">
 <meta property="og:title" content="BRAVA Marketing">
-<meta property="og:description" content="Marketing para brasileiros com negócios nos EUA. Desde 2023, mais de 100 empresas atendidas.">
+<meta property="og:description" content="Mais pedidos de orçamento. Menos promessa.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://samuelotoni325.github.io/brava-marketing/img/og.png">
-<meta property="og:url" content="https://samuelotoni325.github.io/brava-marketing/">
-<meta name="theme-color" content="#101C35">
+<meta property="og:image" content="img/og.png">
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Instrument+Sans:wght@400;500;600&display=swap">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/estilo.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
 
-<div class="progresso" aria-hidden="true"><i id="progresso"></i></div>
-
-<nav class="nav" aria-label="Principal">
-  <div class="w">
-    <a href="#inicio" aria-label="BRAVA, início"><img src="img/brava-principal-creme.svg" alt="BRAVA" width="142" height="29"></a>
-    <ul>
-      <li><a href="#calculadora">Calculadora</a></li>
-      <li><a href="#sistema">O sistema</a></li>
-      <li><a href="#metodo">Método</a></li>
-      <li><a href="#diagnostico">Diagnóstico</a></li>
-      <li><a href="#duvidas">Dúvidas</a></li>
-    </ul>
-    <a class="btn ima" href="#contato"><span>Quero mais clientes</span></a>
+<header class="topo" id="topo">
+  <div class="caixa topo__in">
+    <a class="topo__logo" href="#inicio" aria-label="BRAVA, início"><img src="img/brava-logo.svg" alt="BRAVA" width="132" height="44"></a>
+    <nav class="topo__nav" aria-label="Principal">
+      <a href="#entregas">Entregas</a>
+      <a href="#metodo">Método</a>
+      <a href="#relatorio">Relatório</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
+    <a class="btn btn--laranja btn--p" href="#contato">Diagnóstico grátis <span class="seta" aria-hidden="true">→</span></a>
   </div>
-</nav>
+</header>
 
-<main id="inicio">
-  <section class="hero">
-    <canvas id="campo" aria-hidden="true"></canvas>
-    <div class="w">
-      <div class="hero-txt">
-        <p class="selo laranja hero-in">Marketing para brasileiros com negócios nos EUA</p>
-        <h1 class="t" id="titulo">Você abriu seu negócio no exterior. <span class="dest">Agora é hora de conquistar mais clientes.</span></h1>
-        <p class="sub hero-in">Seu negócio é bom. Mas o cliente escolhe quem ele encontra primeiro. A BRAVA cuida da marca, da presença e das campanhas para ele encontrar você.</p>
-        <div class="acoes hero-in">
-          <a class="btn ima" href="#contato"><span>Quero atrair mais clientes</span>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M3 12H21M14 5L21 12L14 19"></path></svg>
-          </a>
-          <a class="link" href="#diagnostico">Fazer o diagnóstico em 1 minuto</a>
-        </div>
-      </div>
-      <div class="palco" id="palco">
-        <svg class="palco-v" viewBox="0 -868 976 868" aria-hidden="true">
-          <path class="corpo" d="M0 -700H242.4L448.5 -262.4L516.1 -406H758.5L567.2 0H329.7Z"></path>
-          <path class="ponta" id="ponta" d="M536.8 -450L733.7 -868H976.1L779.2 -450Z"></path>
-        </svg>
-        <img class="lider lider-a" src="img/lider-1.webp" alt="Líder da BRAVA de paletó cinza e camiseta preta" width="1122" height="1402">
-        <img class="lider lider-b" src="img/lider-2.webp" alt="Líder da BRAVA de paletó preto e camisa vermelha" width="1122" height="1402">
-        <p class="chip chip-a"><b>100+</b> empresas atendidas</p>
-        <p class="chip chip-b"><b>2023</b> início nos EUA</p>
+<main id="conteudo">
+
+<!-- ABERTURA -->
+<section class="hero" id="inicio">
+  <div class="hero__fundo" aria-hidden="true">
+    <span class="hero__grade"></span>
+    <span class="hero__luz"></span>
+    <span class="mod mod--haste" data-paralaxe="0.06"></span>
+    <span class="mod mod--disco1" data-paralaxe="0.1"></span>
+    <span class="mod mod--disco2" data-paralaxe="0.14"></span>
+  </div>
+  <div class="caixa hero__in">
+    <div class="hero__texto">
+      <p class="selo entra"><span class="selo__ponto"></span>Construção · reforma · house cleaning · serviços locais nos EUA</p>
+      <h1 class="hero__titulo entra">Mais pedidos de orçamento.<br><span class="cinza">Menos promessa.</span></h1>
+      <p class="hero__desc entra">Marketing para brasileiros que constroem, limpam e consertam nos Estados Unidos. Toda semana você recebe um relatório com cada pedido que chegou, de onde veio e quanto custou.</p>
+      <div class="hero__acoes entra">
+        <a class="btn btn--laranja" href="#contato">Quero mais orçamentos <span class="seta" aria-hidden="true">→</span></a>
+        <a class="btn btn--linha" href="#metodo">Ver como funciona</a>
       </div>
     </div>
-  </section>
 
-  <section class="fatos" aria-label="A BRAVA em números">
-    <ul class="w">
-      <li><b data-conta="2023" data-sem-milhar>2023</b><span>Início no mercado americano</span></li>
-      <li><b><span data-conta="100">100</span>+</b><span>Empresas atendidas</span></li>
-      <li><b>EUA</b><span>Atendimento em todo o país</span></li>
-    </ul>
-  </section>
-
-  <div class="faixa" aria-hidden="true">
-    <div class="faixa-trilho" id="faixa">
-      <ul><li>Restaurantes</li><li>Hamburguerias</li><li>Bares</li><li>Lojas</li><li>Prestadores de serviços</li><li>Profissionais autônomos</li></ul>
-      <ul><li>Restaurantes</li><li>Hamburguerias</li><li>Bares</li><li>Lojas</li><li>Prestadores de serviços</li><li>Profissionais autônomos</li></ul>
-      <ul><li>Restaurantes</li><li>Hamburguerias</li><li>Bares</li><li>Lojas</li><li>Prestadores de serviços</li><li>Profissionais autônomos</li></ul>
-      <ul><li>Restaurantes</li><li>Hamburguerias</li><li>Bares</li><li>Lojas</li><li>Prestadores de serviços</li><li>Profissionais autônomos</li></ul>
-    </div>
+    <figure class="fluxo entra" aria-labelledby="fluxo-titulo">
+      <figcaption class="fluxo__cab">
+        <span id="fluxo-titulo">O caminho de um pedido</span>
+        <span class="mono">operação brava</span>
+      </figcaption>
+      <ol class="fluxo__lista">
+        <li><span class="fluxo__ic ic-busca" aria-hidden="true"></span><div><b>Cliente procura no Google</b><span>“house cleaning near me”, “kitchen remodel”</span></div><span class="fluxo__tag">busca</span></li>
+        <li><span class="fluxo__ic ic-selo" aria-hidden="true"></span><div><b>Encontra sua empresa</b><span>Perfil no Maps, Local Services Ads ou anúncio</span></div><span class="fluxo__tag">presença</span></li>
+        <li><span class="fluxo__ic ic-fone" aria-hidden="true"></span><div><b>Liga, manda mensagem ou preenche</b><span>Cada contato fica registrado com a origem</span></div><span class="fluxo__tag">pedido</span></li>
+        <li><span class="fluxo__ic ic-resposta" aria-hidden="true"></span><div><b>Sua equipe responde rápido</b><span>Roteiro e lembretes de follow-up</span></div><span class="fluxo__tag">atendimento</span></li>
+        <li class="fluxo__fim"><span class="fluxo__ic ic-relatorio" aria-hidden="true"></span><div><b>Entra no relatório da semana</b><span>Origem, custo por pedido e fechamento</span></div><span class="fluxo__tag fluxo__tag--on">relatório</span></li>
+      </ol>
+    </figure>
   </div>
 
-  <section class="sec manifesto">
-    <div class="w">
-      <p class="t" id="manifesto">Você deixou um país para abrir esse negócio. Encarou outra língua, outras regras, outro mercado. E hoje perde cliente para quem trabalha pior, só porque essa pessoa aparece melhor.</p>
-      <p class="t virada">A BRAVA existe para virar esse jogo.</p>
-    </div>
-  </section>
+  <div class="fatos">
+    <ul class="caixa fatos__in" aria-label="Sobre a BRAVA">
+      <li><b>2023</b><span>no mercado americano</span></li>
+      <li><b>100+</b><span>empresas atendidas</span></li>
+      <li><b>EUA</b><span>atendimento em todo o país</span></li>
+      <li><b>PT · EN</b><span>conversa em português, campanha em inglês</span></li>
+    </ul>
+  </div>
+</section>
 
-  <section class="sec claro" id="problema">
-    <div class="w">
-      <div class="cab">
-        <p class="selo">Onde o cliente se perde</p>
-        <h2 class="t">Dinheiro não some. Ele vai para o concorrente que aparece.</h2>
-      </div>
-      <ol class="vazamentos">
-        <li class="vaza">
-          <h3 class="t">Quem procura, não acha.</h3>
-          <p>Você não aparece na busca, nos anúncios nem nas redes de quem mora perto.</p>
-          <p class="resolve">A BRAVA coloca seu negócio na frente desse cliente.</p>
-        </li>
-        <li class="vaza">
-          <h3 class="t">Quem acha, não entende.</h3>
-          <p>O perfil é confuso, o site não existe e a marca passa menos confiança do que seu serviço merece.</p>
-          <p class="resolve">A BRAVA deixa claro por que escolher você.</p>
-        </li>
-        <li class="vaza">
-          <h3 class="t">Quem entende, não chama.</h3>
-          <p>Falta uma oferta clara e um caminho simples até o WhatsApp, a reserva ou a compra.</p>
-          <p class="resolve">A BRAVA transforma atenção em contato.</p>
-        </li>
-      </ol>
+<!-- PROBLEMA -->
+<section class="secao problema" id="problema">
+  <div class="caixa problema__in">
+    <div class="problema__esq revela">
+      <p class="rotulo">O problema</p>
+      <h2 class="titulo">Agência genérica promete. Você paga e não sabe o que voltou.</h2>
     </div>
-  </section>
+    <ol class="problema__lista">
+      <li class="revela"><span class="num">01</span><div><h3>Relatório de curtida não paga a folha</h3><p>Alcance, impressões e seguidores enchem slide. Não dizem quantas pessoas pediram orçamento.</p></div></li>
+      <li class="revela"><span class="num">02</span><div><h3>Pedido que chega e ninguém responde</h3><p>Ligação perdida no meio da obra, mensagem respondida no dia seguinte. O cliente já fechou com outro.</p></div></li>
+      <li class="revela"><span class="num">03</span><div><h3>Mesma receita para qualquer negócio</h3><p>Quem vende curso e quem faz deck de madeira não compram cliente do mesmo jeito.</p></div></li>
+    </ol>
+  </div>
+</section>
 
-  <section class="sec escuro" id="calculadora">
-    <div class="w calc">
-      <div class="calc-txt">
-        <p class="selo laranja">Calculadora de oportunidade</p>
-        <h2 class="t">Quanto vale o cliente que ainda não te encontrou?</h2>
-        <p class="lead">Coloque os números do seu negócio e veja o que está em jogo em um ano.</p>
-        <div class="campo-faixa">
-          <label for="c-ticket">Valor médio por compra <output id="o-ticket">US$ 45</output></label>
-          <input id="c-ticket" type="range" min="10" max="1000" step="5" value="45">
-        </div>
-        <div class="campo-faixa">
-          <label for="c-freq">Compras por cliente em um ano <output id="o-freq">4</output></label>
-          <input id="c-freq" type="range" min="1" max="24" step="1" value="4">
-        </div>
-        <div class="campo-faixa">
-          <label for="c-novos">Clientes novos por semana <output id="o-novos">5</output></label>
-          <input id="c-novos" type="range" min="1" max="50" step="1" value="5">
-        </div>
+<!-- SOLUÇÃO -->
+<section class="secao solucao" id="solucao">
+  <div class="caixa solucao__in revela">
+    <p class="rotulo rotulo--centro">A solução</p>
+    <h2 class="titulo titulo--centro">Um sistema medido por pedido de orçamento.</h2>
+    <p class="lead lead--centro">Montamos a presença onde seu cliente procura, ligamos cada contato à sua origem e mostramos o custo de cada pedido. Toda semana, com o relatório na mesa.</p>
+  </div>
+  <div class="caixa trilho revela" aria-hidden="true">
+    <span class="trilho__peca">Presença</span>
+    <span class="trilho__linha"></span>
+    <span class="trilho__peca">Pedido</span>
+    <span class="trilho__linha"></span>
+    <span class="trilho__peca">Atendimento</span>
+    <span class="trilho__linha"></span>
+    <span class="trilho__peca trilho__peca--on">Relatório</span>
+  </div>
+</section>
+
+<!-- ENTREGAS -->
+<section class="secao entregas" id="entregas">
+  <div class="caixa">
+    <div class="cab-secao revela">
+      <div>
+        <p class="rotulo">Entregas</p>
+        <h2 class="titulo">O que a BRAVA monta e opera.</h2>
       </div>
-      <div class="calc-res">
-        <p class="res-rot">Valor anual desses novos clientes</p>
-        <p class="res-num t" id="r-total" aria-live="polite">US$ 46.800</p>
-        <div class="res-barras" id="r-barras" aria-hidden="true"></div>
-        <ul class="res-lista">
-          <li><span>Cada cliente novo vale</span><b id="r-cliente">US$ 180 por ano</b></li>
-          <li><span>Clientes novos em 12 meses</span><b id="r-ano">260</b></li>
-          <li><span>Cada semana parada deixa de gerar</span><b id="r-semana">US$ 900</b></li>
-        </ul>
-        <a class="btn ima cheia" href="#contato"><span>Quero buscar esses clientes</span></a>
-        <p class="nota">Simulação feita com os seus números. Não é promessa de resultado.</p>
-      </div>
+      <p class="lead">Cada peça tem uma função no caminho do pedido. Nada entra só para parecer moderno.</p>
     </div>
-  </section>
 
-  <section class="sec claro" id="sistema">
-    <div class="w">
-      <div class="cab">
-        <p class="selo">O sistema BRAVA</p>
-        <h2 class="t">Post solto não enche a casa. Sistema enche.</h2>
-        <p class="lead">Cada peça entrega o cliente para a próxima. Do anúncio ao balcão, tudo conectado e medido.</p>
-      </div>
-      <div class="sis">
-        <div class="sis-lado">
-          <div class="abas" role="tablist" aria-label="Etapas do sistema" id="abas">
-            <button role="tab" id="aba-0" aria-controls="painel-sis" aria-selected="true">Anúncios e busca</button>
-            <button role="tab" id="aba-1" aria-controls="painel-sis" aria-selected="false" tabindex="-1">Página que vende</button>
-            <button role="tab" id="aba-2" aria-controls="painel-sis" aria-selected="false" tabindex="-1">Captação de contatos</button>
-            <button role="tab" id="aba-3" aria-controls="painel-sis" aria-selected="false" tabindex="-1">Automação</button>
-            <button role="tab" id="aba-4" aria-controls="painel-sis" aria-selected="false" tabindex="-1">Painel de dados</button>
-          </div>
-          <div class="aba-texto" role="tabpanel" id="painel-sis" aria-labelledby="aba-0">
-            <h3 class="t" id="sis-t">O cliente certo vê você primeiro.</h3>
-            <p id="sis-p">Google, Instagram e Facebook levam sua oferta para quem está perto e pronto para comprar.</p>
+    <div class="bento">
+      <article class="card card--g revela">
+        <div class="card__vis vis-perfil" aria-hidden="true">
+          <div class="vp__mapa"><span class="vp__pino"></span></div>
+          <div class="vp__ficha">
+            <span class="vp__nome">Sua empresa</span>
+            <span class="vp__linha"></span><span class="vp__linha vp__linha--c"></span>
+            <div class="vp__botoes"><span>Ligar</span><span>Rota</span><span>Site</span></div>
           </div>
         </div>
-        <figure class="dash" id="dash">
-          <figcaption>Exemplo de painel. Dados ilustrativos.</figcaption>
-          <div class="dash-top">
-            <div class="kpi"><span>Alcance</span><i style="--v:92%"></i></div>
-            <div class="kpi"><span>Cliques</span><i style="--v:64%"></i></div>
-            <div class="kpi"><span>Contatos</span><i style="--v:41%"></i></div>
-            <div class="kpi lar"><span>Clientes</span><i style="--v:26%"></i></div>
-          </div>
-          <svg class="dash-g" viewBox="0 0 600 220" preserveAspectRatio="none" aria-hidden="true">
-            <g stroke="#2B3855" stroke-width="1"><path d="M0 55H600M0 110H600M0 165H600"></path></g>
-            <path id="linha-b" d="M0 180L60 172L120 176L180 150L240 156L300 128L360 132L420 104L480 110L540 86L600 74" fill="none" stroke="#5A6A8E" stroke-width="3"></path>
-            <path id="linha-a" d="M0 196L60 190L120 170L180 160L240 128L300 118L360 88L420 80L480 52L540 40L600 16" fill="none" stroke="#FF6B35" stroke-width="4"></path>
-          </svg>
-        </figure>
-      </div>
-    </div>
-  </section>
+        <h3>Perfil no Google Maps</h3>
+        <p>Categorias, área atendida, fotos de obra, serviços e avaliações organizados para aparecer nas buscas da sua região.</p>
+      </article>
 
-  <section class="metodo escuro" id="metodo">
-    <div class="metodo-pino" id="metodo-pino">
-      <div class="w metodo-top">
-        <div>
-          <p class="selo laranja">Método</p>
-          <h2 class="t">Quatro passos até o próximo cliente.</h2>
+      <article class="card revela">
+        <div class="card__vis vis-lsa" aria-hidden="true">
+          <ul>
+            <li><span class="ok"></span>Empresa verificada</li>
+            <li><span class="ok"></span>Documentos da categoria</li>
+            <li><span class="ok"></span>Área e horário atendidos</li>
+            <li><span class="ok ok--on"></span>Pedido por ligação ou mensagem</li>
+          </ul>
         </div>
-        <div class="metodo-prog" aria-hidden="true"><i id="metodo-prog"></i></div>
-      </div>
-      <ol class="trilho" id="trilho">
-        <li class="painel"><span class="n" aria-hidden="true">1</span><div><h3 class="t">Entender</h3><p>Antes de gastar um dólar, estudamos seu negócio, sua cidade, seu cliente e quem disputa a atenção dele.</p></div></li>
-        <li class="painel"><span class="n" aria-hidden="true">2</span><div><h3 class="t">Posicionar</h3><p>Definimos por que você é a melhor escolha e organizamos marca e mensagem, em português e inglês.</p></div></li>
-        <li class="painel"><span class="n" aria-hidden="true">3</span><div><h3 class="t">Divulgar</h3><p>Colocamos sua comunicação no ar com constância, nos canais onde seu cliente já está.</p></div></li>
-        <li class="painel lar"><span class="n" aria-hidden="true">4</span><div><h3 class="t">Atrair</h3><p>Rodamos as campanhas, medimos o que traz cliente e colocamos mais força no que funciona.</p></div></li>
-      </ol>
-    </div>
-  </section>
+        <h3>Local Services Ads</h3>
+        <p>Cadastro, verificação e gestão do anúncio com selo do Google, em que você paga por contato.</p>
+      </article>
 
-  <section class="cem">
-    <div class="w">
-      <p class="cem-n" aria-hidden="true"><span data-conta="100">100</span><em>+</em></p>
-      <div class="cem-t">
-        <h2 class="t">Mais de 100 empresas já confiaram o crescimento à BRAVA.</h2>
-        <p>Desde 2023 no mercado americano, com clientes em todo o país.</p>
-      </div>
-    </div>
-    <div class="w casos" id="casos" hidden></div>
-  </section>
+      <article class="card revela">
+        <div class="card__vis vis-site" aria-hidden="true">
+          <span class="vs__titulo">Pedir orçamento</span>
+          <span class="vs__campo">Serviço</span>
+          <span class="vs__campo">ZIP code</span>
+          <span class="vs__campo">Telefone</span>
+          <span class="vs__btn">Enviar</span>
+        </div>
+        <h3>Página de orçamento</h3>
+        <p>Página rápida, em inglês, feita para o cliente ligar ou pedir orçamento em poucos toques.</p>
+      </article>
 
-  <section class="sec claro" id="para-quem">
-    <div class="w quem">
-      <div class="quem-t">
-        <p class="selo">Para quem</p>
-        <h2 class="t">Feita para quem faz o negócio acontecer.</h2>
-        <p class="lead">Do restaurante cheio ao profissional que trabalha sozinho, a pergunta é a mesma: como fazer mais gente certa chegar até você?</p>
+      <article class="card revela">
+        <div class="card__vis vis-anuncio" aria-hidden="true">
+          <span class="va__tag">Patrocinado</span>
+          <span class="va__titulo"></span>
+          <span class="va__linha"></span>
+          <span class="va__linha va__linha--c"></span>
+          <span class="va__cta">Call now</span>
+        </div>
+        <h3>Anúncios no Google e na Meta</h3>
+        <p>Campanhas por serviço e por cidade, com verba controlada e cada contato rastreado até a origem.</p>
+      </article>
+
+      <article class="card revela">
+        <div class="card__vis vis-chat" aria-hidden="true">
+          <span class="vc__b vc__b--in">Hi! I need a quote for a deep cleaning.</span>
+          <span class="vc__b vc__b--out">Thanks! What’s your ZIP code?</span>
+          <span class="vc__lembrete">lembrete de follow-up</span>
+        </div>
+        <h3>Atendimento e follow-up</h3>
+        <p>Roteiro de resposta, mensagens prontas e lembretes para nenhum pedido esfriar sem retorno.</p>
+      </article>
+
+      <article class="card card--g card--rel revela">
+        <div class="card__vis vis-rel" aria-hidden="true">
+          <div class="vr__cab"><span>Pedido</span><span>Origem</span><span>Custo</span><span>Status</span></div>
+          <div class="vr__lin"><span></span><span></span><span></span><span class="vr__st"></span></div>
+          <div class="vr__lin"><span></span><span></span><span></span><span class="vr__st vr__st--on"></span></div>
+          <div class="vr__lin"><span></span><span></span><span></span><span class="vr__st"></span></div>
+          <div class="vr__lin"><span></span><span></span><span></span><span class="vr__st vr__st--on"></span></div>
+        </div>
+        <h3>Relatório semanal</h3>
+        <p>Pedidos de orçamento, origem de cada um, custo por pedido e quantos viraram serviço fechado.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- MÉTODO -->
+<section class="secao metodo" id="metodo">
+  <div class="caixa">
+    <div class="cab-secao cab-secao--centro revela">
+      <p class="rotulo rotulo--centro">Método</p>
+      <h2 class="titulo titulo--centro">Quatro etapas. Uma régua: o pedido.</h2>
+    </div>
+    <ol class="etapas">
+      <li class="etapa revela">
+        <span class="etapa__num">01</span>
+        <h3>Diagnóstico</h3>
+        <p>Olhamos seu perfil, anúncios, site e como sua equipe atende. Você sai sabendo onde o pedido está escapando.</p>
+      </li>
+      <li class="etapa revela">
+        <span class="etapa__num">02</span>
+        <h3>Estrutura</h3>
+        <p>Perfil no Maps, Local Services Ads, página de orçamento e rastreamento de ligação e formulário.</p>
+      </li>
+      <li class="etapa revela">
+        <span class="etapa__num">03</span>
+        <h3>Campanhas</h3>
+        <p>Anúncios por serviço e cidade, com verba definida com você e roteiro de atendimento para a equipe.</p>
+      </li>
+      <li class="etapa etapa--on revela">
+        <span class="etapa__num">04</span>
+        <h3>Relatório e ajuste</h3>
+        <p>Toda semana: o que chegou, de onde e quanto custou. O que não traz pedido sai; o que traz recebe mais verba.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- COMPARAÇÃO -->
+<section class="secao compara" id="diferenca">
+  <div class="caixa compara__in">
+    <div class="compara__esq revela">
+      <p class="rotulo">A diferença</p>
+      <h2 class="titulo">Discordamos de agência que só promete.</h2>
+      <p class="lead">Se não dá para medir, não entra na proposta. Simples assim.</p>
+      <a class="btn btn--linha" href="#contato">Pedir diagnóstico <span class="seta" aria-hidden="true">→</span></a>
+    </div>
+    <div class="tabela revela" role="table" aria-label="Agência genérica comparada com a BRAVA">
+      <div class="tabela__cab" role="row"><span role="columnheader">Agência genérica</span><span role="columnheader">BRAVA</span></div>
+      <div class="tabela__lin" role="row"><span role="cell">Relatório de alcance, curtidas e seguidores</span><span role="cell">Relatório de pedidos de orçamento e custo por pedido</span></div>
+      <div class="tabela__lin" role="row"><span role="cell">Mesma receita para qualquer negócio</span><span role="cell">Foco em construção, reforma, limpeza e serviços locais</span></div>
+      <div class="tabela__lin" role="row"><span role="cell">Promessa de resultado antes de olhar seus números</span><span role="cell">Meta combinada depois do diagnóstico</span></div>
+      <div class="tabela__lin" role="row"><span role="cell">Campanha no ar e silêncio até a fatura</span><span role="cell">Ajuste toda semana com base no relatório</span></div>
+      <div class="tabela__lin" role="row"><span role="cell">Conversa difícil em inglês técnico</span><span role="cell">Conversa em português, campanha em inglês</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- RELATÓRIO -->
+<section class="secao relatorio" id="relatorio">
+  <div class="caixa relatorio__in">
+    <div class="relatorio__doc revela" aria-hidden="true">
+      <div class="doc__cab">
+        <img src="img/brava-logo-claro.svg" alt="" width="96" height="32">
+        <span class="mono">relatório semanal</span>
       </div>
-      <ul class="lista t">
-        <li>Restaurantes</li>
-        <li>Hamburguerias</li>
-        <li>Bares</li>
-        <li>Lojas</li>
-        <li>Prestadores de serviços</li>
-        <li>Profissionais autônomos</li>
+      <div class="doc__linhas">
+        <div><span>Pedidos de orçamento</span><i></i></div>
+        <div><span>Origem de cada pedido</span><i></i></div>
+        <div><span>Custo por pedido</span><i></i></div>
+        <div><span>Tempo de resposta</span><i></i></div>
+        <div class="doc__on"><span>Orçamentos fechados</span><i></i></div>
+      </div>
+      <p class="doc__nota mono">os números são do seu negócio, preenchidos toda semana</p>
+    </div>
+    <div class="relatorio__texto revela">
+      <p class="rotulo">O relatório</p>
+      <h2 class="titulo">A prova vem toda semana, não no fim do contrato.</h2>
+      <p class="lead">O relatório é a nossa forma de prestar contas. Você vê o que chegou, o que custou e o que fechou, e decide com a gente onde colocar a verba da próxima semana.</p>
+      <ul class="lista-check">
+        <li>Cada pedido com a origem: Maps, Local Services Ads, anúncio ou indicação</li>
+        <li>Custo por pedido calculado com a verba real</li>
+        <li>Pedidos sem resposta destacados para a equipe</li>
       </ul>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="sec escuro" id="diagnostico">
-    <div class="w diag">
-      <div class="diag-txt">
-        <p class="selo laranja">Diagnóstico rápido</p>
-        <h2 class="t">Seu negócio aparece ou se esconde?</h2>
-        <p class="lead">Cinco perguntas, um minuto, uma resposta sincera.</p>
-      </div>
-      <div class="diag-caixa" id="diag" aria-live="polite">
-        <div class="diag-passos" id="diag-passos" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
-        <div id="diag-q">
-          <p class="diag-n" id="diag-n">Pergunta 1 de 5</p>
-          <p class="t diag-p" id="diag-p">Quem procura seu serviço no Google encontra seu negócio?</p>
-          <div class="diag-bt">
-            <button class="btn" type="button" id="diag-sim">Sim</button>
-            <button class="btn claro-bt" type="button" id="diag-nao">Ainda não</button>
-          </div>
-        </div>
-        <div id="diag-r" hidden>
-          <p class="diag-n" id="diag-nota"></p>
-          <p class="t diag-p" id="diag-titulo"></p>
-          <p id="diag-texto"></p>
-          <ul id="diag-falhas"></ul>
-          <div class="diag-bt">
-            <a class="btn" href="#contato">Quero resolver isso</a>
-            <button class="btn claro-bt" type="button" id="diag-refaz">Refazer</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec escuro quem-somos" id="quem-somos">
-    <div class="w">
-      <div class="quem-top">
-        <div>
-          <p class="selo laranja">Quem somos</p>
-          <h2 class="t">Coragem para empreender. Presença para crescer.</h2>
-        </div>
-        <p class="lead">A gente conhece o caminho de quem começou do zero em outro país. Desde 2023 ajudamos brasileiros a conquistar espaço no mercado americano.</p>
-      </div>
-      <div class="lideres">
-        <article class="card">
-          <div class="moldura"><img src="img/lider-2.webp" alt="Líder da BRAVA de paletó preto e camisa vermelha" width="1122" height="1402" loading="lazy"></div>
-          <div class="nome" data-lider="0" hidden><b></b><span></span></div>
-        </article>
-        <article class="card">
-          <div class="moldura"><img class="encosta" src="img/lider-1.webp" alt="Líder da BRAVA de paletó cinza e camiseta preta" width="1122" height="1402" loading="lazy"></div>
-          <div class="nome" data-lider="1" hidden><b></b><span></span></div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec claro" id="duvidas">
-    <div class="w duv">
+<!-- CASOS (só aparece com casos reais no config.js) -->
+<section class="secao casos" id="casos" hidden>
+  <div class="caixa">
+    <div class="cab-secao revela">
       <div>
-        <p class="selo">Dúvidas</p>
-        <h2 class="t">Antes de chamar a gente.</h2>
-      </div>
-      <div class="faq">
-        <details open><summary>Meu negócio é pequeno. Faz sentido?</summary><p>Sim. Atendemos de restaurantes e lojas a profissionais autônomos. O plano parte do tamanho e do momento do seu negócio.</p></details>
-        <details><summary>Vocês atendem na minha cidade?</summary><p>Atendemos clientes em todo os Estados Unidos.</p></details>
-        <details><summary>Meu cliente é americano, não brasileiro.</summary><p>Sem problema. A comunicação pode ser em português, em inglês ou nos dois idiomas, de acordo com quem você quer atrair.</p></details>
-        <details><summary>Vocês garantem resultado?</summary><p>Não prometemos número sem conhecer seu negócio. Prometemos clareza: você sabe o que está sendo feito e o que está trazendo cliente.</p></details>
-        <details><summary>Quanto custa?</summary><p>Depende do que seu negócio precisa agora. Conte sua situação no formulário e a BRAVA indica o próximo passo.</p></details>
+        <p class="rotulo">Casos</p>
+        <h2 class="titulo">Números de clientes, com autorização.</h2>
       </div>
     </div>
-  </section>
+    <div class="casos__grade" id="casos-grade"></div>
+  </div>
+</section>
 
-  <section class="sec contato escuro" id="contato">
-    <div class="w">
-      <div class="contato-t">
-        <p class="selo laranja">Fale com a BRAVA</p>
-        <h2 class="t">Cada semana invisível é cliente na porta do concorrente.</h2>
-        <p class="lead">Conte sobre seu negócio. A gente mostra qual é o próximo passo.</p>
+<!-- DÚVIDAS -->
+<section class="secao duvidas" id="duvidas">
+  <div class="caixa duvidas__in">
+    <div class="duvidas__esq revela">
+      <p class="rotulo">Dúvidas</p>
+      <h2 class="titulo">Perguntas que todo dono de empresa faz.</h2>
+      <p class="lead">Não achou a sua? Pergunte no diagnóstico.</p>
+    </div>
+    <div class="acordeao revela">
+      <div class="ac">
+        <h3><button class="ac__btn" aria-expanded="false" aria-controls="r1" id="p1">Para que tipo de empresa a BRAVA trabalha?<span class="ac__ic" aria-hidden="true"></span></button></h3>
+        <div class="ac__corpo" id="r1" role="region" aria-labelledby="p1"><div><p>Para prestadores de serviço locais nos EUA: construção, reforma, house cleaning e outros serviços em que o cliente pede orçamento antes de contratar.</p></div></div>
       </div>
-      <form id="form" novalidate>
-        <div class="campo cheio"><label for="nome">Seu nome</label><input id="nome" name="nome" autocomplete="name" required></div>
-        <div class="campo cheio"><label for="negocio">Nome do negócio</label><input id="negocio" name="negocio" autocomplete="organization" required></div>
-        <div class="campo"><label for="cidade">Cidade e estado</label><input id="cidade" name="cidade" placeholder="Orlando, FL" required></div>
-        <div class="campo"><label for="whatsapp">WhatsApp</label><input id="whatsapp" name="whatsapp" type="tel" autocomplete="tel" required></div>
-        <div class="campo cheio"><label for="tipo">Tipo de negócio</label>
-          <select id="tipo" name="tipo" required>
-            <option value="">Selecione</option>
-            <option>Restaurante</option><option>Hamburgueria</option><option>Bar</option><option>Loja</option><option>Prestador de serviços</option><option>Profissional autônomo</option><option>Outro</option>
+      <div class="ac">
+        <h3><button class="ac__btn" aria-expanded="false" aria-controls="r2" id="p2">Quanto custa?<span class="ac__ic" aria-hidden="true"></span></button></h3>
+        <div class="ac__corpo" id="r2" role="region" aria-labelledby="p2"><div><p>Depende dos serviços, das cidades atendidas e da verba de anúncio. Depois do diagnóstico você recebe uma proposta com valor fechado e a verba separada.</p></div></div>
+      </div>
+      <div class="ac">
+        <h3><button class="ac__btn" aria-expanded="false" aria-controls="r3" id="p3">Em quanto tempo os pedidos começam a chegar?<span class="ac__ic" aria-hidden="true"></span></button></h3>
+        <div class="ac__corpo" id="r3" role="region" aria-labelledby="p3"><div><p>Depende do ponto de partida. Anúncios podem gerar contatos logo depois de entrar no ar; a verificação do Local Services Ads e o ganho de posição no Maps levam mais tempo. No diagnóstico mostramos o prazo provável para o seu caso.</p></div></div>
+      </div>
+      <div class="ac">
+        <h3><button class="ac__btn" aria-expanded="false" aria-controls="r4" id="p4">Preciso falar inglês para trabalhar com vocês?<span class="ac__ic" aria-hidden="true"></span></button></h3>
+        <div class="ac__corpo" id="r4" role="region" aria-labelledby="p4"><div><p>Não. A conversa com a BRAVA é em português. Anúncios, perfil e página falam inglês com o seu cliente.</p></div></div>
+      </div>
+      <div class="ac">
+        <h3><button class="ac__btn" aria-expanded="false" aria-controls="r5" id="p5">O que vem no relatório semanal?<span class="ac__ic" aria-hidden="true"></span></button></h3>
+        <div class="ac__corpo" id="r5" role="region" aria-labelledby="p5"><div><p>Quantos pedidos de orçamento chegaram, de onde veio cada um, quanto custou cada pedido e quantos viraram serviço fechado, com o que vamos ajustar na semana seguinte.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section class="secao contato" id="contato">
+  <div class="caixa">
+    <div class="contato__bloco">
+      <span class="contato__mod" aria-hidden="true"></span>
+      <div class="contato__texto revela">
+        <p class="rotulo">Diagnóstico grátis</p>
+        <h2 class="titulo">Descubra onde seus pedidos de orçamento estão escapando.</h2>
+        <ul class="lista-check">
+          <li>Análise do seu perfil, anúncios e página</li>
+          <li>Como sua equipe responde hoje</li>
+          <li>Próximos passos, em português e sem compromisso</li>
+        </ul>
+      </div>
+      <form class="form revela" id="form" novalidate>
+        <div class="campo"><label for="f-nome">Seu nome</label><input id="f-nome" name="nome" autocomplete="name" required></div>
+        <div class="campo"><label for="f-empresa">Empresa</label><input id="f-empresa" name="empresa" autocomplete="organization" required></div>
+        <div class="campo"><label for="f-servico">Serviço principal</label>
+          <select id="f-servico" name="servico" required>
+            <option value="">Escolha</option>
+            <option>Construção</option>
+            <option>Reforma</option>
+            <option>House cleaning</option>
+            <option>Outro serviço local</option>
           </select>
         </div>
-        <input type="hidden" id="diag-campo" name="diagnostico">
-        <button class="btn" type="submit" id="enviar">Quero atrair mais clientes</button>
-        <p id="aviso" role="status" hidden></p>
+        <div class="campo"><label for="f-cidade">Cidade e estado</label><input id="f-cidade" name="cidade" autocomplete="address-level2" placeholder="Ex.: Orlando, FL" required></div>
+        <div class="campo campo--l"><label for="f-tel">WhatsApp</label><input id="f-tel" name="telefone" type="tel" autocomplete="tel" inputmode="tel" required></div>
+        <button class="btn btn--laranja btn--cheio" type="submit">Quero meu diagnóstico <span class="seta" aria-hidden="true">→</span></button>
+        <p class="form__msg" id="form-msg" role="status" aria-live="polite"></p>
       </form>
     </div>
-  </section>
+  </div>
+</section>
+
 </main>
 
-<footer>
-  <div class="w">
-    <img src="img/brava-principal-creme.svg" alt="BRAVA" width="120" height="25">
-    <span>Coragem para empreender. Presença para crescer.</span>
-    <span>© 2026 BRAVA</span>
+<footer class="rodape">
+  <div class="caixa rodape__in">
+    <div class="rodape__marca">
+      <img src="img/brava-logo.svg" alt="BRAVA" width="120" height="40">
+      <p>Marketing para prestadores de serviço brasileiros nos EUA. Desde 2023.</p>
+    </div>
+    <nav class="rodape__nav" aria-label="Rodapé">
+      <a href="#entregas">Entregas</a>
+      <a href="#metodo">Método</a>
+      <a href="#relatorio">Relatório</a>
+      <a href="#duvidas">Dúvidas</a>
+      <a href="#contato">Contato</a>
+      <a href="" id="link-ig" hidden target="_blank" rel="noopener">Instagram</a>
+    </nav>
+  </div>
+  <div class="caixa rodape__base">
+    <span>© <span id="ano">2026</span> BRAVA Marketing</span>
+    <a href="#inicio">Voltar ao topo ↑</a>
   </div>
 </footer>
 
-<a class="btn fixo" href="#contato" id="fixo">Quero atrair mais clientes</a>
-
-<script src="js/vendor/gsap.min.js"></script>
-<script src="js/vendor/ScrollTrigger.min.js"></script>
 <script src="js/config.js"></script>
 <script src="js/app.js"></script>
-
+</body>
 </html>

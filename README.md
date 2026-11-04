@@ -1,20 +1,13 @@
-# BRAVA Marketing
+# BRAVA Marketing · landing B modular
 
-Landing page estática da BRAVA, pronta para o GitHub Pages. Não precisa de build.
+Site estático: `index.html`, `css/`, `js/`, `img/`. Não precisa de build.
 
-Site: https://samuelotoni325.github.io/brava-marketing/
+## Antes de publicar
+Edite `js/config.js`:
+- `whatsapp`: número da BRAVA com DDI, só números. O formulário abre o WhatsApp com a mensagem pronta.
+- `envioFormulario` (opcional): endpoint de Formspree, Make ou Zapier. Tem prioridade sobre o WhatsApp.
+- `instagram` (opcional): link do perfil, aparece no rodapé.
+- `casos` (opcional): resultados reais e autorizados. Vazio, a seção não aparece.
 
-## Publicar
-
-O GitHub Pages publica a branch `main`, pasta `/ (root)`. Todo envio para `main` atualiza o site.
-
-Para usar domínio próprio, informe o domínio em **Settings › Pages › Custom domain** e atualize `og:image` e `og:url` em `index.html`.
-
-## Editar
-
-Abra `js/config.js`:
-
-- `whatsapp`: número da BRAVA, só dígitos com DDI. O formulário abre o WhatsApp com a mensagem pronta.
-- `envioFormulario`: endereço de um serviço como Formspree. Tem prioridade sobre o WhatsApp.
-- `lideres`: nome e cargo das duas fotos.
-- `casos`: resultados reais e autorizados de clientes.
+## Publicar no GitHub Pages
+Copie o conteúdo desta pasta para a raiz do repositório e publique na branch `main`.
