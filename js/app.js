@@ -47,7 +47,9 @@
   /* entrada da abertura */
   var entra = $$('.entra');
   entra.forEach(function (el, i) { el.style.setProperty('--atraso', (reduz ? 0 : 90 + i * 110) + 'ms'); });
-  requestAnimationFrame(function () { requestAnimationFrame(function () { entra.forEach(function (el) { el.classList.add('visto'); }); }); });
+  var mostraEntra = function () { entra.forEach(function (el) { el.classList.add('visto'); }); };
+  requestAnimationFrame(function () { requestAnimationFrame(mostraEntra); });
+  setTimeout(mostraEntra, 400);
 
   /* revelação ao rolar */
   var revela = $$('.revela');
